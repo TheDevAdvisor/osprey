@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
 $font-header: "Bitter", "Roboto Slab", "Cambria", Georgia, serif;
 $font-body: "Rubik", "Poppins", "Hel­vetica", Arial, sans-serif;
 $font-code: "Menlo", "Monaco", "Andale Mono", "lucida console", "Courier New", monospace;
@@ -37,16 +39,31 @@ $breakpoint-small: 25em; // 400px
 
 @mixin size($level) {
   font-size: map-get($font-scale-large, $level);
+
   @media (max-width: $breakpoint-medium) {
     font-size: map-get($font-scale-medium, $level);
   }
+
   @media (max-width: $breakpoint-small) {
     font-size: map-get($font-scale-small, $level);
   }
 }
 
-h1 {
-  @include size(h1);
+h1:not(.main-title),
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-header;
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
+h1:not(.main-title) {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 h2 {

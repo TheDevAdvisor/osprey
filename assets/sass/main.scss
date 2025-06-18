@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik|Bitter");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik|Bitter');
 @import "flexboxgrid";
 @import "colors";
 @import "typography";
@@ -15,6 +16,7 @@
   }
 
   nav {
+
     // Hide menu links between logo and hamburger menu
     div:not(:first-child):not(:last-child) {
       display: none;
@@ -32,6 +34,7 @@
   }
 
   nav {
+
     div.logo,
     div.nav-toggle {
       max-width: 50% !important;
@@ -170,12 +173,12 @@ time {
     background-size: 1px 2px;
     text-decoration: none;
     text-shadow: .03em 0 $white, -.03em 0 $white, 0 .03em $white, 0 -.03em $white,
-    .06em 0 $white, -.06em 0 $white, .09em 0 $white, -.09em 0 $white,
-    .12em 0 $white, -.12em 0 $white, .15em 0 $white, -.15em 0 $white,
-    .03em .075em $white, -.03em .075em $white, .06em .075em $white,
-    -.06em .075em $white, .09em .075em $white, -.09em .075em $white,
-    .12em .075em $white, -.12em .075em $white, .15em .075em $white,
-    -.15em .075em $white;
+      .06em 0 $white, -.06em 0 $white, .09em 0 $white, -.09em 0 $white,
+      .12em 0 $white, -.12em 0 $white, .15em 0 $white, -.15em 0 $white,
+      .03em .075em $white, -.03em .075em $white, .06em .075em $white,
+      -.06em .075em $white, .09em .075em $white, -.09em .075em $white,
+      .12em .075em $white, -.12em .075em $white, .15em .075em $white,
+      -.15em .075em $white;
 
     &:hover {
       color: $accent;
